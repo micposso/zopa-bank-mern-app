@@ -14,10 +14,9 @@ const Navigation = () => {
           <Nav className="me-auto">
             <Nav.Link href="/create">Create Account</Nav.Link>
             <Nav.Link href="/deposit">Deposit</Nav.Link>
-            <Nav.Link href="#link">Withdraw</Nav.Link>
-            <Nav.Link href="#link">Balance</Nav.Link>
-            <Nav.Link href="#link">All Data</Nav.Link>
-            <Nav.Link href="#link">Login</Nav.Link>
+            <Nav.Link href="/withdraw">Withdraw</Nav.Link>
+            <Nav.Link href="/balance">Balance</Nav.Link>
+            <Nav.Link href="/alldata">All Data</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

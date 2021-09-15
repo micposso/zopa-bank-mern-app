@@ -2,7 +2,10 @@ import './App.css';
 import Navigation from './components/navigation'
 import Home from './components/home'
 import CreateAccount from './components/createAccount'
+import Withdraw from './components/withdraw'
+import Balance from './components/balance'
 import Deposit from './components/deposit'
+import AllData from './components/allData'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom' 
 
 function App() {
@@ -20,6 +23,15 @@ function App() {
             </Route>
             <Route path="/deposit">
               <Deposit />
+            </Route>
+            <Route path="/withdraw">
+              <Withdraw />
+            </Route>
+            <Route path="/balance">
+              <Balance />
+            </Route>
+            <Route path="/alldata">
+              <AllData />
             </Route>
           </Switch>
         </div>

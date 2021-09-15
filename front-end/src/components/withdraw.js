@@ -3,15 +3,15 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-const deposit = () => {
+const Withdraw = () => {
   return (
     <Card style={{ width: "30rem" }}>
       <Card.Body>
-        <Card.Title>Deposit Money</Card.Title>
+        <Card.Title>Withdraw Money</Card.Title>
         <Card.Text>
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Ammount to Deposit</Form.Label>
+              <Form.Label>Ammount to Withdraw</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
             </Form.Group>
             <Button variant="primary" type="submit">
@@ -24,4 +24,4 @@ const deposit = () => {
   );
 };
 
-export default deposit;
+export default Withdraw;
