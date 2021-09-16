@@ -1,11 +1,11 @@
 import React from "react";
 
-const AllData = () => {
+const AllData = ({alldata}) => {
   return (
-    <>
+    <div>
     <h3>All Data</h3>
-    <p>Data goes here</p>
-    </>
+    <p>{alldata.name}</p>
+    </div>
   );
 };
 
