@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-const Withdraw = () => {
+const Withdraw = ({balance}) => {
   return (
     <Card style={{ width: "30rem" }}>
       <Card.Body>

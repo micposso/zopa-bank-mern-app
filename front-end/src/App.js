@@ -16,8 +16,6 @@ function App() {
   
   const [ account, setAccount ] = useState(Data);
 
-  console.log('from state', Object.values(account)[0][0].name);
-
   return (
     <Router>
       <div className="container">
@@ -28,13 +26,13 @@ function App() {
               <Home />
             </Route>
             <Route path="/create">
-              <CreateAccount />
+              <CreateAccount account={account} />
             </Route>
             <Route path="/deposit">
-              <Deposit />
+              <Deposit balance={Object.values(account)[0][0]} />
             </Route>
             <Route path="/withdraw">
-              <Withdraw />
+              <Withdraw balance={Object.values(account)[0][0]} />
             </Route>
             <Route path="/balance">
               <Balance balance={Object.values(account)[0][0]} />

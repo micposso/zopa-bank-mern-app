@@ -3,7 +3,9 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-const deposit = () => {
+// create a function that sums the amount in the form when submitted and adds it to the balance state
+
+const deposit = ({balance}) => {
   return (
     <Card style={{ width: "30rem" }}>
       <Card.Body>
